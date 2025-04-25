@@ -1,4 +1,4 @@
-with open("./Day 2/D2.txt") as f:
+with open("Advent Of Code 2022\Day 2\D2.txt") as f:
   lines = f.readlines()
   list = [line.strip() for line in f]
   # first_line = line.split('\n', 1)[0]

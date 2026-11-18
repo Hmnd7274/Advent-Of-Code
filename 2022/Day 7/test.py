@@ -1,0 +1,42 @@
+import re
+# thisdict = {
+#   "brand": "Ford",
+#   "model": "Mustang",
+#   "year": 1964
+# }
+# thisdict.update({"abc": {"g": {}}})
+# print(thisdict)
+# gdir = thisdict["abc"]
+# gdir.update({"newdir":1})
+# print(gdir)
+# print(thisdict)
+# print("dir".find("dir"))
+
+x = re.findall("\/[a-z]*", "/bjr/fg/okhf")
+dir = {"bjr": {"fg": {"okhf": {}}}}
+cdir = dir
+for dir2 in x :
+    cdir = cdir[dir2[1:]]
+    # print(cdir)
+# variable = "/bjr/fg/okhf"
+# dirname = "okhf"
+# # variable = variable[:-2]
+# print(variable[variable.rfind("/")+1:])
+# line = "123 BND"
+# print({line[line.find(" ")+1:]: line[:line.find(" ")]})
+currentPath = "/bjr/fg/okhf"
+dirName = "okhf"
+currentPath = currentPath[:-(len(dirName) + 1)]
+# print(currentPath)
+dictmoi = {'cdnhnmcb': {'fsjwz.css': '170937', 'jmfcfs.gsq': '281758', 'jwwv.zlz': '109017', 'tsrqvpbq': '295735'}, 'dmccnsqv': {'fsjwz.css': '273438', 'jtntzqfd': {'wqfvvzth.vdz': '4635'}, 'tqmbq': {'bnvspstf': {'mwvz.vwh': '46133', 'rjcp.gqj': '289236'}, 'bqcvlnw.pmq': '22264', 'hwv': {'tsrqvpbq': {'rvvjbz.mgh': '292872'}}, 'jlwjsbw.bzf': '200690', 'npclt': {'bhllwpr': '191646', 'jlwjsbw.bzf': '26548', 'nnqz': '214302', 'szdjtbt.tmw': '74637'}, 'qvnbwvt.sbv': '243708', 'tsrqvpbq.mtf': '157861'}, 'vmgpwrbz.nbp': '211769', 'wqz.qcg': '205895'}, 'dsm': '290229', 'gsszlj': {'bjvqcfwc': {'rvvjbz': '125387'}, 'dfzhdhs': {'jlwjsbw.bzf': '218291', 'jsmjbfg': {'bmszdt': '72259', 'fsjwz.css': '242641', 'mwtlz': '109294', 'sgngzrnn.mww': '149525'}, 'rvvjbz': {'rqjmjhrb': '175613'}, 'zdrtjvzj.rlt': '272548', 'ztdcrnl.hjj': '196309'}, 'dsm.hzf': '179837', 'gnrzhsw.jcf': '112354', 'jlwjsbw.bzf': '175236', 'mfnllhfw': {'fcjrv.dvh': '119986', 'gwjgjljj': {'mlmmfh': '237890', 'ncjzqll': {'gwwh.ttt': '152092'}, 'zdrtjvzj.rlt': '10935'}, 'jjjbv.fdp': '157962', 'mwttp': {'fsjwz.css': '217929'}, 'vhzdjv.fqh': '30246', 'zdrtjvzj.rlt': '197554', 'zhdn.dtj': '288875'}, 'nwvcgb': {'fsjwz.css': '131410', 'nqrdmvjm': {'btjwzz': {'nqrdmvjm': {'dsm': {'gwwh.ttt': '84979', 'rvvjbz': {'btvjmhp.dwm': '189309'}}, 'gzv.wzw': '160109', 'mcgmjn.ftg': '33187', 'pbgdcwd': {'rzgbfcg.dzg': '240743'}, 'ztdcrnl.hjj': '167821'}, 'tsrqvpbq': {'mmhvjn': '284223', 'tnv.rcs': '188341', 'zdrtjvzj.rlt': '271396'}, 'zdrtjvzj.rlt': '150003'}, 'dsm': {'ptf': '128966'}, 'fcrsj': {'qljq.nrv': '261786'}, 'fsjwz.css': '141465', 'ztdcrnl.hjj': '133916'}, 'qwbg.hcb': '82487', 'tsrqvpbq': {'fsjwz.css': '57089', 'ttfhpzll': '208087'}, 'tsrqvpbq.wqw': '123617'}, 'rvvjbz': {'ldglv': {'wjwzdg.ldb': '39389'}}, 'vcvmq': {'jzgd': {'dqmhdw.mjr': '91717', 'ztdcrnl.hjj': '69771'}, 'lmfdrnnz.dcc': '246541', 'npclt': '169613', 'npclt.jsl': '264902', 'pwzbvvwz': {'cdmfv': {'dsm.qjw': '172054'}, 'fvqjbd': {'hclqv': '212067', 'tcjsbn': {'wbzwnc.pqf': '40576', 'wlrjhcf.jtg': '13447'}}, 'nhvhhs': {'bgfgrzs': '92810'}, 'npclt': {'dcs': {'nrqwg': '274856'}, 'tsrqvpbq': {'jlwjsbw.bzf': '144678', 'nqrdmvjm': {'btpm.vhg': '122069', 'psrmw': '105752', 'rvvjbz.bnn': '149744', 'ztdcrnl.hjj': '126434'}, 'qwddbflc.gjp': '163728'}}, 'rgdb': {'blzt': '75645', 'clz': {'fshcptjq': {'btf': '157704', 'qcpjsfr': '66314', 'rsftvgr': '225592'}, 'lhgsdhl.gss': '125496', 'pfbjptg.lqh': '291857', 'rdhmmqml.lrw': '78923'}, 'ddmbzz': {'cbc.dmn': '217731', 'cdwwz': '16389', 'gwwh.ttt': '256395', 'rvsslvbh': '233481', 'rvvjbz': {'zrwtdlzz': {'gdgl.vbc': '21488'}}, 'zgc': {'gwwh.ttt': '222107', 'npclt.fpp': '35382'}}, 'hrl': {'rvvjbz': {'dgn.mgd': '65335'}}, 'jgmd.htc': '280472', 'nqwgl.qqb': '217770', 'qjcrf': {'fjrdgbwh': {'wvnzt.wvq': '143960'}}}}, 'rch.bsc': '82651', 'vddwtwz.pqf': '223282', 'wnb': {'jlwjsbw.bzf': '66543', 'nqrdmvjm': {'cqn': {'npclt.pcl': '38563', 'sdlmtzzv': '14353', 'ztdcrnl.hjj': '52230'}, 'mnmbmb': {'fsjwz.css': '212337', 'gwwh.ttt': '24700', 'npclt': '10243', 'nqrdmvjm': {'plrvst.bpd': '19026'}, 'rvvjbz': '238617'}, 'pmw.pdl': '182573', 'rvvjbz': {'fsjwz.css': '23115', 'jlwjsbw.bzf': '260656', 'zdrtjvzj.rlt': '113097'}, 'ztdcrnl.hjj': '92911'}, 'pfwptjtl': {'jlwjsbw.bzf': '134817', 'npclt': '80522', 'nqrdmvjm.mbc': '254529', 'ztdcrnl.hjj': '35322'}, 'sbdlzbt.hlj': '3047'}}}, 'hmw': {'cfc': {'npclt': '159334', 'ztdcrnl.hjj': '212665'}, 'cmbtwjqm': {'vzftvhhc': {'jlwjsbw.bzf': '86763', 'nbj': {'jlwjsbw.bzf': '63776'}, 'qzbf': {'rtszjp.zhq': '189850'}}}, 'dsm': {'bddwfjhv': {'zdrtjvzj.rlt': '201408'}, 'fltv': '258304', 'jlwjsbw.bzf': '4285', 'nqrdmvjm': {'npclt.dnd': '250981'}, 'rvvjbz': {'npclt.msj': '181444', 'thzv.jbn': '146533'}, 'zdrtjvzj.rlt': '258902'}, 'dzsj.bsl': '81077', 'gzgr': {'brmzzz': {'jlwjsbw.bzf': '40671'}, 'dsm': {'bmdpw': '53299', 'npclt': {'bdldl': '30938', 'gfwbhj.nvh': '36847', 'qjpggrst.czp': '159051', 'vwpr.drg': '233569', 'wwln': {'fsjwz.css': '153489', 'lzcrjs': '196950'}}, 'qdrlng': '223542', 'thjnrtq': {'fsjwz.css': '30861'}}}, 'jrdhssrz': {'bqcn.ctq': '194556', 'gnhc': {'fsjwz.css': '183841', 'hzcpmz': '128648', 'mvznln': '154895', 'ztdcrnl.hjj': '193794'}, 'gwwh.ttt': '148157', 'jcqcjbj': {'cbbfjsp': '266176', 'dsm': {'bjhsqfpp.rvw': '13098', 'grpp': {'jvw.psl': '259797', 'sfm.twr': '32317'}, 'nqb': {'rvvjbz.fdm': '82426'}}, 'sfq': '195555'}, 'jlwjsbw.bzf': '245407', 'lmvh': '248457'}, 'npclt': {'tqzmprzr': {'dsm.hqd': '278120'}}, 'tsrqvpbq': {'dqbnbl': {'dhzs': {'gwwh.ttt': '110840', 'tsrqvpbq': '197645'}, 'dsm': '281375', 'gwwh.ttt': '121452', 'mbc': {'drsrlls.ctp': '224503', 'dzm': {'fsjwz.css': '279593', 'gwwh.ttt': '13111', 'hchlb.bdn': '205453', 'jlwjsbw.bzf': '277556', 'jvd': {'fsjwz.css': '76776', 'wqdzvs.vwf': '85847'}, 'nqrdmvjm': {'npclt.fcq': '40200'}, 'prqlqh': {'fsjwz.css': '267371'}, 'rhdhhfs': {'dsm.qln': '51224'}, 'rvvjbz': {'npclt': {'bdqtq.slq': '138588', 'rjmbd.pdj': '221322', 'ztdcrnl.hjj': '279540'}, 'wdhgmfb': {'jcg.pwz': '98271'}, 'wjwgrq': '60599'}}, 'jlwjsbw.bzf': '65461', 'nqrdmvjm': {'swnsstls.zcl': '221950', 'tqwhs': '7947'}, 'nqrdmvjm.vtq': '137158', 'rvvjbz': {'zdrtjvzj.rlt': '272797'}, 'rwrzljq': '126868'}, 'npclt': {'bqlgnwwf.qqf': '294537', 'flzmnmft': '285887', 'fsjwz.css': '3041', 'npclt': {'sjcr.qmc': '96669'}, 'rvvjbz': {'fsjwz.css': '240351', 'rvvjbz.tlc': '112539'}, 'zhwvl': '235966'}, 'tsrqvpbq.zsz': '211213', 'zdrtjvzj.rlt': '125518'}, 'dsm': {'dpbsq': {'vczm': {'jfzq.fvc': '252709'}}, 'lmvjnd': {'rsp.njm': '20118'}, 'vjnb': {'vvggw.ljj': '192558'}}, 'lsglr': {}, 'rvvjbz.rvh': '213028', 'tsrqvpbq.ptw': '112991', 'qvp': '222728', 'ztdcrnl.hjj': '296718'}, 'vssgzdw': {'smfhgcv': {'dtpgsvfv.csm': '16174', 'lhbqdpv': '43403', 'ndh': {'jlwjsbw.bzf': '80287'}, 'pcj.csh': '52985', 'vwsrt': '81157', 'zdrtjvzj.rlt': '278111'}}, 'wngccwdr': {'ppjnslg': '6088'}, 'wrpd.zwq': '5928', 'ztdcrnl.hjj': '113540'}, 'jhmrn': {'qwqhhbth': {'ggfmlp': {'dsm': '35739', 'jlwjsbw.bzf': '38351'}, 'qgflbldg': {'pbw': {'nqrdmvjm': {'tnd': {'lwsvwsl': {'jlwjsbw.bzf': '150503'}}}, 'nqrdmvjm.qvj': '5912'}, 'rvvjbz': {'dmrff': {'vmmzmf': {'tsrqvpbq': '211105'}}, 'ssnbl': {'mlj.qbv': '246210'}, 'zgrgt': {'lnvqlhsj': '207409'}}, 'tqppnqmv': {'gwwh.ttt': '59007', 'jlwjsbw.bzf': '123705', 'rvvjbz.hbn': '277423', 'tbs': '170157', 'ztg': {'fsjwz.css': '8432'}}}}}, 'ncb': {'dsm': '30859', 'jvp.jwl': '74337', 'lgvwz': {'fftbgl.tnh': '105307', 'npclt.sdq': '69432', 'zdrtjvzj.rlt': '49765', 'ztdcrnl.hjj': '214149'}, 'lhl.rtq': '150310'}, 'npclt': {'dsm': {'bcccgpl': {'dshtjdcs': '237918', 'mtrcfbf': {'hms': {'zdrtjvzj.rlt': '185755'}, 'tsrqvpbq': '49756'}, 'tgt': {'dsm': {'dsm.rvc': '71528'}, 'jmfdpdf': {'hgsvvrqt.vbp': '231263'}, 'zdrtjvzj.rlt': '256858'}, 'tsrqvpbq': {'clhqvp': '218774'}, 'wpfsbnh.nbh': '99779', 'ztdcrnl.hjj': '257112'}, 'cvddqch': {'fsjwz.css': '144164', 'gfszp': {'fsjwz.css': '127091'}, 'nqrdmvjm': '60880', 'vhhtgj': '222198'}, 'fsjwz.css': '210401', 'nqrdmvjm.tgr': '96482', 'nwctzch': {'rfvvc': '258292'}, 'zdrtjvzj.rlt': '29453'}, 'rvvjbz': {'cnv': {'gzvmv.dfg': '208016'}, 'dtpswgq': {'jfbgfts': {'bbtbqv': '273657', 'dsm.rnc': '77349', 'nqrdmvjm': {'bjdrqnt': {'tph.bpz': '103077', 'wmvzc': '264222'}, 'msqc': {'ztdcrnl.hjj': '72288'}, 'npclt': {'tfbzdm': {'nqrdmvjm': {'gljgj': {'gwwh.ttt': '135000'}}, 'nqrdmvjm.gwj': '35970', 'rvvjbz.pvs': '54275', 'wwrsrmn': {}, 'ztdcrnl.hjj': '179618'}}, 'rsms': {}, 'vzhdtv': {}}, 'zdrtjvzj.rlt': '208448'}}, 'ggdhw': {}, 'jsjlq': '97538', 'nqrdmvjm.fhj': '218535', 'tsrqvpbq.mbs': '134022', 'zdrtjvzj.rlt': '51273'}, 'trr': {}}, 'rvvjbz': {}}
+
+import json
+
+# print(json.dumps(dictmoi, indent=2))
+
+with open("testa.json", "w") as f :
+    json.dump(dictmoi, f, ensure_ascii=False, indent=2)
+# print("\n"*-5+"bj")
+minDict = {"": 3}
+name = ""
+print(minDict.get(name))
